@@ -6,6 +6,6 @@ numpy
 Pillow
 matplotlib
 seaborn
-sklearn
+scikit-learn
 joblib
 
