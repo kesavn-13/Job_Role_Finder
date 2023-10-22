@@ -1,13 +1,14 @@
 from joblib import load
 import pandas as pd
 import streamlit as st
+import pickle
 
 
 skillMapper = ['C/C++', 'Data Mining', 'Data Science', 'Excel', 'Google Drive', 'HR', 'Java', 'MS OFFICE', 'Machine Learning', 'Marketing', 'SEO', 'Word Press']
 expertiseMapper = ['Accounting', 'Advertising', 'Asset Management', 'Customer Relations', 'Customer Service', 'Data Analyst', 'Finances', 'Human Resources', 'Legal Department', 'ML Engineer', 'Media Relations', 'Payroll', 'Public Relations', 'Quality Assurance', 'Research and Development', 'Sales and Marketing', 'Tech Support', 'Web Developer']
 
 
-model = load('model.joblib')
+model = pickle.load(open('model_save', 'rb'))
 
 
 st.title("Welcome to Job Role Finder :)")
